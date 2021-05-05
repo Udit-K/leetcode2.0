@@ -27,10 +27,6 @@ public class LRUCache {
     int cap;
     Map<Integer, Integer> lruCache;
 
-    public static void main(String[] args) {
-
-    }
-
     public LRUCache(int capacity) {
         lruCache = new LinkedHashMap<>();
         cap = capacity;
