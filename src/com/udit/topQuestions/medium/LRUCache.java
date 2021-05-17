@@ -34,7 +34,7 @@ public class LRUCache {
 
     public int get(int key) {
         if(lruCache.containsKey(key)) {
-            int val =lruCache.get(key);
+            int val = lruCache.get(key);
             lruCache.remove(key);
             lruCache.put(key, val);
             return val;
